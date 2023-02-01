@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <title>BLE data to google firebase</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Noise Sensor</h2>
+      <p>
+        This script helps you to connect to BleuIO and sends data to Firebase
+        cloud.
+      </p>
+
+      <br>
+      <button class="btn btn-success" id="connect">Connect</button>
+      <!-- To get Ble data from HibouAir (Peripheral device), BleuIO has to be on central mode -->
+
+      <button class="btn btn-success" id="sendDataTCloudBtn">
+        Scan
+      </button>
+
+      <!-- <button class="btn btn-success" id="stopSendingData">
+        Stop Sending Data
+      </button> -->
+      <br><br>
+      <h5><div id="log"></div></h5>
+    </div>
+
+    <script src="/index.8cfc62b9.js" defer=""></script>
+  </body>
+</html>
